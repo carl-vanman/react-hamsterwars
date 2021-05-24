@@ -100,6 +100,13 @@
 	padding: 1em 1em;
 }
 
+/* lite onödig media query */
+@media only screen and (max-width: 721px) {
+	.App .page-main {
+		padding-bottom: 4em;
+	}
+}
+
 .App .page-main section {
 	height: 667px;
 }
@@ -121,6 +128,12 @@
 	line-height: 85%;
 	font-weight: 900;
 }
+
+.App h3 {
+	font-size: 32px;
+	font-weight: 900;
+}
+
 .App .aside p {
 	width: clamp(20ch, 90%, 75ch);
 }
@@ -168,18 +181,65 @@
 
 /* main */
 /* ska det var en bg på main istället? känns smartare? */
-.App .page-main .main {
+/* .App .page-main .main {
 	background-image: url(./img/main-bg.png);
 	background-size: min(90%);
 	background-repeat: no-repeat;
 	background-position: center center;
-}
+} */
 
-/* .App .page-main .main {
+/* gallery / battle */
+.App .page-main .main {
 	box-shadow: 0 0 0 6px var(--prime-blue);
 	display: grid;
 	padding: 1em;
-	grid-template-columns: auto 1fr;
+	grid-template-columns: repeat(auto-fill, minmax(223px, 1fr));
+	place-items: center;
 
-	column-gap: 30px;
-} */
+	gap: 30px;
+	overflow: scroll;
+}
+
+.App .page-main .main .hamster-preview {
+	border: 1px solid var(--prime-lightblue);
+	height: max(256px);
+	width: min(223px);
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+}
+
+.App .page-main .main .hamster-img {
+	background-color: var(--prime-blue);
+	width: 100%;
+	height: 90%;
+}
+
+
+.App .page-main .main .hamster-preview .text {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.App .page-main .main .hamster-preview .text h4 {
+	font-size: 24px;
+	font-weight: 900;
+}
+
+.App .page-main .main .hamster-preview .text button {
+	background-color: white;
+	color: var(--prime-lightblue);
+	border: none;
+	font-size: 12px;
+	font-weight: 900;
+	width: min-content;
+	cursor: pointer;
+	align-self: flex-end;
+	transition: 450ms ease-out;
+}
+
+.App .page-main .main .hamster-preview .text button:hover {
+	color: var(--prime-blue);
+}

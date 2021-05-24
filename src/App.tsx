@@ -23,7 +23,7 @@ function App() {
 						friend!
 					</h1>
 					<div>
-						<h3>header</h3>
+						<h3>/Header</h3>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ratione ipsa doloremque delectus eos numquam minima 
 						</p>
@@ -41,7 +41,72 @@ function App() {
 					</div>
 				</section>
 				<section className="main">
-					
+					<div className="hamster-preview">
+						<div className="hamster-img"
+						style={{ display:"grid", placeItems:"center", color:"#202124"}}
+						>
+							photo
+						</div>
+						<div className="text">
+							<h4>Namn </h4>
+							<button>more</button>
+						</div>
+					</div>
+					<div className="hamster-preview">
+						<div className="hamster-img"
+						style={{ display:"grid", placeItems:"center", color:"#202124"}}
+						>
+							photo
+						</div>
+						<div className="text">
+							<h4>Namn</h4>
+							<button>more</button>
+						</div>
+					</div>
+					<div className="hamster-preview">
+						<div className="hamster-img"
+						style={{ display:"grid", placeItems:"center", color:"#202124"}}
+						>
+							photo
+						</div>
+						<div className="text">
+							<h4>Namn </h4>
+							<button>more</button>
+						</div>
+					</div>
+					<div className="hamster-preview">
+						<div className="hamster-img"
+						style={{ display:"grid", placeItems:"center", color:"#202124"}}
+						>
+							photo
+						</div>
+						<div className="text">
+							<h4>Namn</h4>
+							<button>more</button>
+						</div>
+					</div>
+					<div className="hamster-preview">
+						<div className="hamster-img"
+						style={{ display:"grid", placeItems:"center", color:"#202124"}}
+						>
+							photo
+						</div>
+						<div className="text">
+							<h4>Namn </h4>
+							<button>more</button>
+						</div>
+					</div>
+					<div className="hamster-preview">
+						<div className="hamster-img"
+						style={{ display:"grid", placeItems:"center", color:"#202124"}}
+						>
+							photo
+						</div>
+						<div className="text">
+							<h4>Namn</h4>
+							<button>more</button>
+						</div>
+					</div>
 				</section>
 			</main>
 		</div>
