@@ -1,37 +1,90 @@
 /* Page layout css */
 .App.grid-container {
 	display: grid;
-	min-height: 100vh;
+	height: 100vh;
 	grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
 	grid-template-rows: minmax(80px, auto) 1fr;
 }
 /* page header */
-.App .header {
+.App .App-header {
 	grid-column: 2 / 3;
+
+
 	/* ändra till grid? */
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: space-around;
+	flex-wrap: wrap;
 	column-gap: 2em;
 	
-	padding: 1em;
+	padding: 1em 1em;
 	text-transform: uppercase;
 }
 
-.App .header h1 {
+.App .App-header h1 {
 	font-size: 24px;
-	font-weight: var(--fw-b);
+	font-weight: 900;
 	color: var(--prime-black);
 }
 
+/* header navigation */
+.App .header-nav {
+	display: flex;
+	gap: 2em;
+}
+
 @media only screen and (max-width: 620px) {
-	.App .header {
+	.App .App-header {
 		justify-content: center;
+	}
+	.App .header-nav {
+		gap: 1em;
 	}
 }
 
+.App .header-nav > a {
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: 700;
+	padding: 0.5em 0em;
+	position: relative;
+}
 
+/* link underline animation */
+.App .header-nav > a::after {
+	content: "";
+	height: 4px;
+	width: 100%;
+	background-color: var(--prime-blue);
+	position: absolute;
+	right: 0px;
+	display: none;
+	animation: link-underline 400ms ease;
+}
+
+.App .header-nav > a:hover::after {
+	display: block;
+}
+
+@keyframes link-underline {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+/* current page/ when clicked */
+.App .header-nav a.active::after {
+	display: block;
+	content: "";
+	height: 4px;
+	width: 100%;
+	background-color: var(--prime-blue);
+	position: absolute;
+	right: 0px;
+}
 
 /* page main */
 .App .page-main {

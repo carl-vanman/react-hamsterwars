@@ -1,8 +1,14 @@
 :root {
+/* Text */
+--fw-n: 400;
+--fw-m: 700;
+--fw-b: 900;
+
+/* Colours */
 	--prime-blue: #4691FF;
 	--prime-lightblue: #88B8FF; 
-	--prime-black: #202124;
 	--prime-purple: #DEB4FF;
+	--prime-black: #202124;
 }
 
 * {

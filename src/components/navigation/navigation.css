@@ -1,0 +1,54 @@
+.header-nav {
+	display: flex;
+	gap: 2em;
+}
+
+.header-nav > a {
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: 700;
+	padding: 0.5em 0em;
+	position: relative;
+}
+
+/* link underline animation */
+.header-nav > a::after {
+	content: "";
+	height: 4px;
+	width: 100%;
+	background-color: var(--prime-blue);
+	position: absolute;
+	right: 0px;
+	display: none;
+	animation: link-underline 400ms ease;
+}
+
+.header-nav > a:hover::after {
+	display: block;
+}
+
+/* current page/ when clicked */
+.header-nav a.active::after {
+	display: block;
+	content: "";
+	height: 4px;
+	width: 100%;
+	background-color: var(--prime-blue);
+	position: absolute;
+	right: 0px;
+}
+
+@keyframes link-underline {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 620px) {
+	.header-nav {
+		gap: 1em;
+	}
+}

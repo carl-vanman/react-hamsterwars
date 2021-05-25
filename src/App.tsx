@@ -1,17 +1,14 @@
 import './App.css';
+import {BrowserRouter as Router } from 'react-router-dom'
+import Navigation from './components/navigation/Navigation';
 
 function App() {
 	return (
+		<Router>
 		<div className="App grid-container">
-			<header className="page-header">
+			<header className="header">
 				<h1>Hamsterwars</h1>
-				<nav className="header-nav">
-					<a href="#">History</a>
-					<a href="#">Statistics</a>
-					<a href="#">Gallery</a>
-					<a href="#">Battle</a>
-					<a className="active" href="#">Home</a>
-				</nav>
+				<Navigation />
 			</header>
 			<main className="page-main">
 				<section className="aside">
@@ -41,7 +38,7 @@ function App() {
 					</div>
 				</section>
 				<section className="main">
-					<div className="hamster-preview">
+					<div className="hamster-card">
 						<div className="hamster-img"
 						style={{ display:"grid", placeItems:"center", color:"#202124"}}
 						>
@@ -52,51 +49,7 @@ function App() {
 							<button>more</button>
 						</div>
 					</div>
-					<div className="hamster-preview">
-						<div className="hamster-img"
-						style={{ display:"grid", placeItems:"center", color:"#202124"}}
-						>
-							photo
-						</div>
-						<div className="text">
-							<h4>Namn</h4>
-							<button>more</button>
-						</div>
-					</div>
-					<div className="hamster-preview">
-						<div className="hamster-img"
-						style={{ display:"grid", placeItems:"center", color:"#202124"}}
-						>
-							photo
-						</div>
-						<div className="text">
-							<h4>Namn </h4>
-							<button>more</button>
-						</div>
-					</div>
-					<div className="hamster-preview">
-						<div className="hamster-img"
-						style={{ display:"grid", placeItems:"center", color:"#202124"}}
-						>
-							photo
-						</div>
-						<div className="text">
-							<h4>Namn</h4>
-							<button>more</button>
-						</div>
-					</div>
-					<div className="hamster-preview">
-						<div className="hamster-img"
-						style={{ display:"grid", placeItems:"center", color:"#202124"}}
-						>
-							photo
-						</div>
-						<div className="text">
-							<h4>Namn </h4>
-							<button>more</button>
-						</div>
-					</div>
-					<div className="hamster-preview">
+					<div className="hamster-card">
 						<div className="hamster-img"
 						style={{ display:"grid", placeItems:"center", color:"#202124"}}
 						>
@@ -110,7 +63,17 @@ function App() {
 				</section>
 			</main>
 		</div>
+		</Router>
 	);
 }
 
 export default App;
+
+
+/* 
+activclass in NavLink
+
+activeClassName={location.href !== "your pathname"? null : "nav-link-gdc-selected"} */
+
+/* for home NavLink */
+/* exact activeClassName="active" path="/" */
