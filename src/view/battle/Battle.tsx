@@ -1,15 +1,15 @@
-import './home.css'
+import './battle.css'
 import LeftContainer from '../../components/leftContainer/LeftContainer'
 import RightContainer from '../../components/rightContainer/RightContainer'
 
-const Home = () => {
+const Battle = () => {
 
 	return (
-		<div className="home-page-main">
-			<RightContainer />
+		<div className="battle-page-main">
 			<LeftContainer />
+			<RightContainer />
 		</div>
 	)
 }
 
-export default Home
+export default Battle

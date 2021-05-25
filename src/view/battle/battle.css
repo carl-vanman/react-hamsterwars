@@ -1,0 +1,20 @@
+.battle-page-main {
+	/* padding: 4em 2em; */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+	column-gap: 30px;
+	row-gap: 80px;
+	align-items: center;
+	padding: 1em 1em;
+}
+
+/* lite onödig media query */
+@media only screen and (max-width: 721px) {
+	.battle-page-main {
+		padding-bottom: 4em;
+	}
+}
+
+.battle-page-main section {
+	height: 667px;
+}
