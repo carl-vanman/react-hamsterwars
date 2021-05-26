@@ -1,13 +1,14 @@
 import './battle.css'
-import LeftContainer from '../../components/leftContainer/LeftContainer'
-import RightContainer from '../../components/rightContainer/RightContainer'
+import '../viewGenerall.css'
+/* import LeftContainer from '../../components/leftContainer/LeftContainer'
+import RightContainer from '../../components/rightContainer/RightContainer' */
 
 const Battle = () => {
 
 	return (
-		<div className="battle-page-main">
-			<LeftContainer />
-			<RightContainer />
+		<div className="main">
+			{/* <LeftContainer />
+			<RightContainer /> */}
 		</div>
 	)
 }

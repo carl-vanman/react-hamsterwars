@@ -3,28 +3,26 @@ import './navigation.css'
 
 const Navigation = () => {
 
+
+	/* remove exact from all others then home? */
 	return (
 		<nav className="header-nav">
 			<NavLink
-				exact
 				activeClassName="active"
 				to="/history"
 			>History
 			</NavLink>
 			<NavLink
-				exact
 				activeClassName="active"
 				to="/statistics"
 			>Statistics
 			</NavLink>
 			<NavLink
-				exact
 				activeClassName="active"
 				to="/gallery"
 			>Gallery
 			</NavLink>
 			<NavLink
-				exact
 				activeClassName="active"
 				to="/battle"
 			>Battle
