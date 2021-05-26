@@ -28,7 +28,6 @@ app.get('/', (req, res) => {
 	res.send('Firebase hamsterwars-assignment')
 })
 
-
 // REST API for /hamsters
 app.use('/hamsters', hamsters)
 app.use('/matches', matches)

@@ -6,11 +6,13 @@
 }
 
 .left-container span {
-	font-size: clamp(48px, 10vw, 96px);
+	font-size: clamp(64px, 10vw, 96px);
+	/* font-size: clamp(48px, 10vw, 96px); */
 }
 
 .left-container h1 {
-	font-size: clamp(72px, 14vw, 144px);
+	font-size: clamp(96px, 14vw, 144px);
+	/* font-size: clamp(72px, 14vw, 144px); */
 	line-height: 85%;
 	font-weight: 900;
 }
