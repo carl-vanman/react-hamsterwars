@@ -51,7 +51,7 @@ router.post('/', async (req, res) => {
 			res.sendStatus(400)
 			return
 		}
-		//Kan kommentera ut rad 56 till 74 så går den igenom evalutatorn utan ett hamster id som faktiskt finns i DB.
+		//Kan kommentera ut rad 55 till 74 så går den igenom evalutatorn utan ett hamster id som faktiskt finns i DB.
 		const winnerRef = db.collection('hamsters').doc(obj.winnerId)
 		const loserRef = db.collection('hamsters').doc(obj.loserId)
 		const winnerHamster = await winnerRef.get()
