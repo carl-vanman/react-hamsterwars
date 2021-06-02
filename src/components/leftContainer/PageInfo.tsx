@@ -32,11 +32,11 @@ const PageInfo = ({data, stateHandler}: Props) => {
 				</p>
 			</div>
 			<div className="btn-container">
-				<button 
+				{data.primaryButton && <button 
 				className="btn sec"
 				onClick={stateHandler}>
 					{data.primaryButton}
-				</button>
+				</button>}
 				{ data.secondaryButton && 
 				<button className="btn prime">
 					{data.secondaryButton}

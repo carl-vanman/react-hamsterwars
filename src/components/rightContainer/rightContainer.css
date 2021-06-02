@@ -1,5 +1,5 @@
 .right-container{
-	box-shadow: 0 0 0 6px var(--prime-blue);
+	/* box-shadow: 0 0 0 6px var(--prime-blue); */
 	display: grid;
 	padding: 1em;
 	grid-template-columns: repeat(auto-fill, minmax(223px, 1fr));
@@ -7,6 +7,11 @@
 
 	gap: 30px;
 	overflow: scroll;
+	transition: 450ms ease-out;
+}
+
+.right-container:hover {
+	box-shadow: 0 0 0 6px var(--prime-blue);
 }
 
 .right-container.bg {

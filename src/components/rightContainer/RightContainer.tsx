@@ -3,6 +3,8 @@ import './rightContainer.css'
 
 const RightContainer = () => {
 
+
+	
 	return (
 		<section className="right-container">
 			<Card />

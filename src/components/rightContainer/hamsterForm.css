@@ -1,0 +1,33 @@
+.form {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+/* .form .left-side {
+	display: grid;
+	grid-auto-rows: auto;
+}
+
+.form .right-side {
+	display: grid;
+	grid-template-rows: 1fr auto;
+} */
+
+.form .first-four {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+	justify-content: center;
+}
+
+.form label {
+	display: flex;
+	flex-direction: column;
+}
+
+.form input {
+	border-radius: 3px;
+	border: 3px solid var(--prime-blue);
+	font-size: 1.3em;
+	padding: 0.2em;
+	
+}

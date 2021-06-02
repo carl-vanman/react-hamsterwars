@@ -10,13 +10,13 @@ const losers = require('./routes/losers.js')
 
 const PORT = process.env.PORT || 1339
 const buildFolder = path.join(__dirname, '../build')
-/* const staticImgFolder = path.join(__dirname, 'img') */
+const staticImgFolder = path.join(__dirname, 'img')
 
 //Middleware
 app.use( express.json() )
 app.use( cors() )
 app.use( express.static(buildFolder) )
-/* app.use( '/img', express.static(staticImgFolder) ) */
+app.use( '/img', express.static(staticImgFolder) )
 
 app.use((req, res, next) =>{
 	console.log(`${req.method} ${req.url}`, req.params);
