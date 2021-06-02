@@ -1,16 +1,8 @@
 import './leftContainer.css'
-
-type PropsObj = {
-	topTitleWord: string | null,
-	topSecTitleWord: string | null,
-	secondaryTitle: string | null,
-	paragraph : string | null,
-	primaryButton: string | null,
-	secondaryButton: string | null
-}
+import { InfoModel } from '../../types/pageInfo/InfoModel'
 
 interface Props {
-	data: PropsObj,
+	data: InfoModel,
 	stateHandler: () => void
 }
 
@@ -32,15 +24,17 @@ const PageInfo = ({data, stateHandler}: Props) => {
 				</p>
 			</div>
 			<div className="btn-container">
-				{data.primaryButton && <button 
-				className="btn sec"
-				onClick={stateHandler}>
-					{data.primaryButton}
-				</button>}
+				{data.primaryButton && 
+					<button 
+					className="btn sec"
+					onClick={stateHandler}
+					>{data.primaryButton}</button>
+				}
+
 				{ data.secondaryButton && 
-				<button className="btn prime">
-					{data.secondaryButton}
-				</button>}
+					<button className="btn prime"
+					>{data.secondaryButton}</button>
+				}
 			</div>
 		</section>
 	)

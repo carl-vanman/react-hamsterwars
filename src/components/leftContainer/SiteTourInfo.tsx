@@ -1,21 +1,12 @@
 import { useState } from 'react'
 import './leftContainer.css'
-
-interface PropsObj {
-	topTitleWord: string | null,
-	topSecTitleWord: string | null,
-	secondaryTitle: string | null,
-	paragraph : string | null,
-	primaryButton: string | null,
-	secondaryButton: string | null
-}
+import { InfoModel } from '../../types/pageInfo/InfoModel'
 
 interface Props {
-	data: PropsObj[]
+	data: InfoModel[]
 }
 
 const SiteTourInfo = ({data}: Props) => {
-	/* function that checks if paragraph has element in it? ex. <br /> */
 	const [index, setIndex] = useState(0)
 		
 	return (
