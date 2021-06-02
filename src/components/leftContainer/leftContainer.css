@@ -17,7 +17,7 @@
 	font-weight: 900;
 }
 
-h3 {
+.left-container h3 {
 	font-size: 32px;
 	font-weight: 900;
 }
@@ -31,77 +31,4 @@ h3 {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 2em;
-}
-
-.left-container .btn {
-	font-size: 24px;
-	font-weight: 900;
-	padding:0.5em 1.5em;
-	border: none;
-	cursor: pointer;
-	transition: 450ms ease-out;
-}
-
-.left-container .btn.prime {
-	background-color: var(--prime-blue);
-	color: white;
-}
-.left-container .btn.prime {
-	background-color: var(--prime-blue);
-	color: white;
-}
-
-.left-container .btn.prime:hover {
-	box-shadow: inset 0 0 0 6px var(--prime-blue);
-	background-color: white;
-	color: var(--prime-blue);
-}
-
-.left-container .btn.sec {
-	box-shadow: inset 0 0 0 6px var(--prime-blue);
-	background-color: white;
-}
-
-.left-container .btn.sec:hover {
-	box-shadow: inset 0 0 0 0px var(--prime-blue);
-	background-color: var(--prime-blue);
-	color: white;
-}
-
-.left-container .btn.sec.disable {
-	box-shadow: inset 0 0 0 6px var(--prime-lightblue);
-	pointer-events: none;
-	color: var(--prime-lightblue);
-}
-
-.left-container .btn.prime.disable {
-	background-color: var(--prime-lightblue);
-	pointer-events: none;
-}
-
-.currentPage {
-	height: 16px;
-	width: 16px;
-	border-radius:100vw;
-	border:2px solid var(--prime-blue);
-	background-color: var(--prime-blue);
-	animation: current 300ms;
-}
-
-@keyframes current {
-	0%{
-		border:2px solid var(--prime-blue);
-		background-color:white;
-	}
-
-	100% {
-		background-color: var(--prime-blue);
-	} 
-}
-
-.notCurrentPage {
-	height:16px;
-	width:16px;
-	border:2px solid var(--prime-blue);
-	border-radius:100vw;
 }

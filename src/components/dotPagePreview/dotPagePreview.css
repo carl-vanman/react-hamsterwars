@@ -1,0 +1,32 @@
+.dot-container {
+	display:flex;
+	gap:10px;
+	align-items: center;
+}
+
+.dot-container .notCurrentPage {
+	height:16px;
+	width:16px;
+	border:2px solid var(--prime-blue);
+	border-radius:100vw;
+}
+
+.dot-container .currentPage {
+	height: 16px;
+	width: 16px;
+	border-radius:100vw;
+	border:2px solid var(--prime-blue);
+	background-color: var(--prime-blue);
+	animation: current 300ms;
+}
+
+@keyframes current {
+	0%{
+		border:2px solid var(--prime-blue);
+		background-color:white;
+	}
+
+	100% {
+		background-color: var(--prime-blue);
+	} 
+}

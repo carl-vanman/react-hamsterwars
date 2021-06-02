@@ -1,0 +1,25 @@
+.btn {
+	font-size: 24px;
+	font-weight: 900;
+	padding:0.5em 1.5em;
+	border: none;
+	cursor: pointer;
+	transition: 450ms ease-out;
+}
+
+.btn.secondary {
+	box-shadow: inset 0 0 0 6px var(--prime-blue);
+	background-color: white;
+}
+
+.btn.secondary:hover {
+	box-shadow: inset 0 0 0 0px var(--prime-blue);
+	background-color: var(--prime-blue);
+	color: white;
+}
+
+.btn.secondary.disable {
+	box-shadow: inset 0 0 0 6px var(--prime-lightblue);
+	pointer-events: none;
+	color: var(--prime-lightblue);
+}

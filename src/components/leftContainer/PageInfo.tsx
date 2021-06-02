@@ -1,5 +1,6 @@
 import './leftContainer.css'
 import { InfoModel } from '../../types/pageInfo/InfoModel'
+import PrimaryButton from '../buttons/primaryButton/PrimaryButton'
 
 interface Props {
 	data: InfoModel,
@@ -24,16 +25,10 @@ const PageInfo = ({data, stateHandler}: Props) => {
 				</p>
 			</div>
 			<div className="btn-container">
-				{data.primaryButton && 
-					<button 
-					className="btn sec"
-					onClick={stateHandler}
-					>{data.primaryButton}</button>
-				}
-
-				{ data.secondaryButton && 
-					<button className="btn prime"
-					>{data.secondaryButton}</button>
+				{ data.primaryButton &&
+					<PrimaryButton 
+						text={data.primaryButton} classname={""} stateHandler={stateHandler}
+					/>
 				}
 			</div>
 		</section>
