@@ -1,0 +1,22 @@
+.btn.delete {
+	font-size: 24px;
+	font-weight: var(--fw-b);
+	margin-top: 0.1em;
+	margin-bottom: 1em;
+	padding:0.3em;
+	width: 100%;
+	border: none;
+	cursor: pointer;
+	transition: 450ms ease-out;
+}
+
+.btn.delete {
+	background-color: var(--prime-black);
+	color: var(--prime-white);
+}
+
+.btn.delete:hover {
+	box-shadow: inset 0 0 0 6px var(--prime-black);
+	background-color: var(--prime-white);
+	color: var(--prime-black);
+}

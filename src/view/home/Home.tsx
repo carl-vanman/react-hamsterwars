@@ -1,4 +1,3 @@
-import './home.css'
 import '../viewGenerall.css'
 import PageInfo from '../../components/leftContainer/PageInfo'
 import SiteTourInfo from '../../components/leftContainer/SiteTourInfo'
@@ -18,9 +17,9 @@ const Home = () => {
 	return (
 		<div className="main">
 			{
-				Array.isArray(data) ?
-				<SiteTourInfo data={data} /> :
-				<PageInfo data={data} stateHandler={swapInfo}/>
+				Array.isArray(data)
+				? <SiteTourInfo data={data} />
+				: <PageInfo data={data} stateHandler={swapInfo}/>
 			}
 			<BackgroundImg />
 		</div>

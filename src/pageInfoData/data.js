@@ -52,9 +52,19 @@ const createInfo = {
 	secondaryButton: null
 }
 
+const battleInfo = {
+	topTitleWord: 'Hamster',
+	topSecTitleWord: 'Battle',
+	secondaryTitle: '/Battle',
+	paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat exercitationem obcaecati quasi laborum amet velit officiis eligendi corporis. Sunt officia iure neque reprehenderit quis? Quidem animi eligendi nulla. Recusandae, a!',
+	primaryButton: null,
+	secondaryButton: null
+}
+
 export {
 	homeInfo,
 	tourInfo,
 	galleryInfo,
-	createInfo
+	createInfo,
+	battleInfo
 }
