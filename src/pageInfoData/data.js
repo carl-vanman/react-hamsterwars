@@ -34,7 +34,27 @@ const tourInfo = [
 	}
 ]
 
+const galleryInfo = {
+	topTitleWord: 'Hamster',
+	topSecTitleWord: 'gallery',
+	secondaryTitle: '/Gallery',
+	paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat exercitationem obcaecati quasi laborum amet velit officiis eligendi corporis. Sunt officia iure neque reprehenderit quis? Quidem animi eligendi nulla. Recusandae, a!',
+	primaryButton: 'create hamster',
+	secondaryButton: null
+}
+
+const createInfo = {
+	topTitleWord: 'Create',
+	topSecTitleWord: 'hamster',
+	secondaryTitle: '/Create',
+	paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat exercitationem obcaecati quasi laborum amet velit officiis eligendi corporis. Sunt officia iure neque reprehenderit quis? Quidem animi eligendi nulla. Recusandae, a!',
+	primaryButton: 'back to gallery',
+	secondaryButton: null
+}
+
 export {
 	homeInfo,
-	tourInfo
+	tourInfo,
+	galleryInfo,
+	createInfo
 }

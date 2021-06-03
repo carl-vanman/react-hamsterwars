@@ -1,0 +1,25 @@
+.error-handler {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9999;
+	display: grid;
+	place-items: center;
+}
+
+.error-handler .text-container {
+	background-color: var(--prime-black);
+	width: 95vw;
+	height: 95vh;
+	padding: 2em 2em;
+	border-radius: 20px;
+	line-height: 3em;
+	opacity: 0.9;
+	display: grid;
+	place-items: center;
+	text-align: center;
+}
+
+.error-handler h1 {
+	max-width: 30ch;
+}

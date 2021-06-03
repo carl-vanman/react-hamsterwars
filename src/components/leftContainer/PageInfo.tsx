@@ -27,7 +27,9 @@ const PageInfo = ({data, stateHandler}: Props) => {
 			<div className="btn-container">
 				{ data.primaryButton &&
 					<PrimaryButton 
-						text={data.primaryButton} classname={""} stateHandler={stateHandler}
+						text={data.primaryButton}
+						classname={""}
+						stateHandler={stateHandler}
 					/>
 				}
 			</div>

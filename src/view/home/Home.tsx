@@ -11,7 +11,7 @@ const Home = () => {
 
 	const [data, setData] = useState<InfoModel | InfoModel[]>(homeInfo)
 
-	const stateHandler = () => {
+	const swapInfo = () => {
 		setData(tourInfo)
 	}
 
@@ -20,7 +20,7 @@ const Home = () => {
 			{
 				Array.isArray(data) ?
 				<SiteTourInfo data={data} /> :
-				<PageInfo data={data} stateHandler={stateHandler}/>
+				<PageInfo data={data} stateHandler={swapInfo}/>
 			}
 			<BackgroundImg />
 		</div>
