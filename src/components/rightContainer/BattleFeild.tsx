@@ -1,18 +1,7 @@
 import './rightContainer.css'
 import { useEffect, useRef, useState } from 'react'
 import Card from '../card/Card';
-
-interface Hamster {
-	id: string,
-	name: string,
-	age: number,
-	favFood: string,
-	loves: string,
-	imgName: string,
-	games: number,
-	defeats: number,
-	wins: number
-};
+import { Hamster } from '../../types/hamster/Hamster'
 
 const BattleFeild = () => {
 	const cancelRef = useRef<any>(null)

@@ -2,15 +2,6 @@
 	display: grid;
 	grid-template-columns: 1fr;
 }
-/* .form .left-side {
-	display: grid;
-	grid-auto-rows: auto;
-}
-
-.form .right-side {
-	display: grid;
-	grid-template-rows: 1fr auto;
-} */
 
 .form .first-four {
 	display: flex;
@@ -29,5 +20,16 @@
 	border: 3px solid var(--prime-blue);
 	font-size: 1.3em;
 	padding: 0.2em;
-	
+}
+
+.form input.notValid {
+	border: 2px solid red;
+}
+.form .errorText {
+	color: red;
+}
+
+.form button.disable {
+	background-color: royalblue;
+	pointer-events: none;
 }
