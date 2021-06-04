@@ -28,8 +28,3 @@
 .form .errorText {
 	color: red;
 }
-
-.form button.disable {
-	background-color: royalblue;
-	pointer-events: none;
-}

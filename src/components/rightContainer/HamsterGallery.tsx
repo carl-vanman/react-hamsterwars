@@ -13,7 +13,7 @@ const HamsterGallery = ({dataDb, fetchHandler}: Props) => {
 	if (!dataDb) {
 		return (
 			<section className="right-container">
-				<h1>Loading...</h1>
+				<h1 className="loading">Loading...</h1>
 			</section>
 		);
 	}

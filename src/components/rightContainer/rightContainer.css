@@ -22,5 +22,6 @@
 	box-shadow: 0 0 0 0px var(--prime-blue);
 }
 
-/* gallery / battle */
-/* padding last image not there */
+.right-container .loading {
+	grid-column: 1 / -1;
+}

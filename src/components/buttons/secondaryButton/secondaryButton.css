@@ -23,3 +23,14 @@
 	pointer-events: none;
 	color: var(--prime-lightblue);
 }
+
+.btn.secondary.width {
+	margin-top: 0.1em;
+	width: 100%;
+	grid-column: 1 / -1;
+}
+
+.btn.secondary.start-match, .btn.secondary.upload {
+	margin-top: 0.1em;
+	grid-column: 1 / -1;
+}

@@ -2,6 +2,7 @@ import './rightContainer.css'
 import { useEffect, useRef, useState } from 'react'
 import Card from '../card/Card';
 import { Hamster } from '../../types/hamster/Hamster'
+import SecondaryButton from '../buttons/secondaryButton/SecondaryButton';
 
 const BattleFeild = () => {
 	const cancelRef = useRef<any>(null)
@@ -127,30 +128,26 @@ const BattleFeild = () => {
 	if (status === "loading") {
 		return (
 			<section className="right-container">
-				<h1>Loading...</h1>
+				<h1 className="loading">Loading...</h1>
 			</section>
 		);
 	}
 	return (
 		<section className="right-container">
-		{!responseData &&
-		<button
-			onClick={() => getRandomHamster()}>
-		Start match
-		</button>}
+		{!responseData && 
+			<SecondaryButton text="Start match"
+			classname={"start-match"}
+			stateHandler={() => getRandomHamster()}/>
+		}
 		{
 			responseData ? responseData.map((hamster: Hamster ) => {
 				const URL_IMG = `/img/${hamster.imgName}`
 				return (
 					<div key={hamster.id}>
-						{!show && <button style={{
-							width:"100%",
-							border: "3px solid var(--prime-blue)",
-							backgroundColor: "white",
-						}}
-						onClick={() => postMatch(hamster.id)}
-						>Cutest</button>}
 						<Card hamsterData={hamster} URL_IMG={URL_IMG}  />
+						{!show && <SecondaryButton text="Cutest"
+						classname={"width"}
+						stateHandler={() =>postMatch(hamster.id)}/>}
 						{show && 
 							<div>
 								<h4>Wins:</h4><p>{hamster.wins}</p>
@@ -163,11 +160,10 @@ const BattleFeild = () => {
 			}) : null
 		}
 		{show &&
-		<button
-			onClick={() => getRandomHamster()}>
-		Start new match
-		</button>
-		}	
+			<SecondaryButton text="start new match"
+			classname={"start-match"}
+			stateHandler={() => getRandomHamster()}/>
+		}
 		</section>
 	)
 }

@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from 'react'
 import './hamsterForm.css'
 import { HamsterNoId } from '../../types/hamster/HamsterNoId'
+import SecondaryButton from '../buttons/secondaryButton/SecondaryButton'
 
 interface FormTarget {
 	target: { 
@@ -158,7 +159,6 @@ const HamsterForm = () => {
 			<section className="form right-container" style={{textAlign:"center"}}>
 				<h1>Your hamster is added!</h1>
 				<p>Click "back to gallery" and you will find your hamster with the others</p>
-				{/* <button onClick={() => SetResponseData(undefined)}>back</button> */}
 			</section>
 		)
 	} else {
@@ -216,9 +216,9 @@ const HamsterForm = () => {
 					value={newHamsterObj.imgName}
 					onChange={updateNewHamster}/>
 				</label>
-				{<button 
-				className={validAge && validName ? "" : "disable"}
-				onClick={() => postHamster()}>Upload</button>}
+				<SecondaryButton text="upload"
+					classname={(validAge && validName) ? "upload" : "upload disable"}
+					stateHandler={() => postHamster()}/>
 			</section>
 		)
 	}
