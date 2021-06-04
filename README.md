@@ -11,6 +11,7 @@ Spelet går ut på att rösta på den hamster du tycker är sötast, efter varje
 
 #
 
-Det har varit ett väldigt lärorikt projekt att få arbeta med. Det har givit mig större kundskap att kunna arbeta mer självständingt och möjlighet att experimentera i mina tankar för problemlösning och utformande. Defenitivt fördjupat min förståelse vad som händer bakom kulisserna, något annars magiskt har blivit mer förståeligt.
+Det har varit ett väldigt lärorikt projekt att få arbeta med. Det har givit mig större kundskap att kunna arbeta mer självständingt och möjlighet att experimentera i mina tankar för problemlösning och utformande.
+Projektet har defenitivt fördjupat min förståelse vad som händer bakom kulisserna, något annars magiskt har blivit mer förståeligt.
 
 Jag kommer fortsätta bygga på mina **React** kunskaper efter projektet känns som det fortfarande finns mkt att upptäcka och förbättra.
