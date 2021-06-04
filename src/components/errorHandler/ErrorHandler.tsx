@@ -1,6 +1,5 @@
 import './errorHandler.css'
 
-
 interface Props {
 	errorMessage: string
 }

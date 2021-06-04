@@ -3,11 +3,9 @@ import './navigation.css'
 
 const Navigation = () => {
 
-
-	/* remove exact from all others then home? */
 	return (
 		<nav className="header-nav">
-			<NavLink
+			{/* <NavLink
 				activeClassName="active"
 				to="/history"
 			>History
@@ -16,7 +14,7 @@ const Navigation = () => {
 				activeClassName="active"
 				to="/statistics"
 			>Statistics
-			</NavLink>
+			</NavLink> */}
 			<NavLink
 				activeClassName="active"
 				to="/gallery"

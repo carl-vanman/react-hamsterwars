@@ -23,7 +23,7 @@
 @keyframes current {
 	0%{
 		border:2px solid var(--prime-blue);
-		background-color:white;
+		background-color:var(--prime-white);
 	}
 
 	100% {

@@ -6,7 +6,7 @@
 .header-nav > a {
 	text-decoration: none;
 	font-size: 12px;
-	font-weight: 700;
+	font-weight: var(--fw-m);
 	padding: 0.5em 0em;
 	position: relative;
 }

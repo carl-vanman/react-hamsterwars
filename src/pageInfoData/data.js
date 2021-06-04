@@ -66,5 +66,5 @@ export {
 	tourInfo,
 	galleryInfo,
 	createInfo,
-	battleInfo
+	battleInfo,
 }

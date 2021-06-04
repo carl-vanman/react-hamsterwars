@@ -14,12 +14,12 @@
 	font-size: clamp(72px, 12vw, 144px);
 	/* font-size: clamp(72px, 14vw, 144px); */
 	line-height: 85%;
-	font-weight: 900;
+	font-weight: var(--fw-b);
 }
 
 .left-container h3 {
 	font-size: 32px;
-	font-weight: 900;
+	font-weight: var(--fw-b);
 }
 
 .left-container p {

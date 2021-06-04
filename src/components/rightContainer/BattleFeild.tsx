@@ -141,7 +141,13 @@ const BattleFeild = () => {
 		}
 		{
 			responseData ? responseData.map((hamster: Hamster ) => {
-				const URL_IMG = `/img/${hamster.imgName}`
+				let URL_IMG:string = `/img/${hamster.imgName}`
+
+					if( hamster.imgName.includes('http') ) {
+						URL_IMG = hamster.imgName
+					} else if(hamster.imgName.includes('/img/')){
+						URL_IMG = hamster.imgName
+					}
 				return (
 					<div key={hamster.id}>
 						<Card hamsterData={hamster} URL_IMG={URL_IMG}  />

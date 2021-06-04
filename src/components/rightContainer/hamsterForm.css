@@ -23,8 +23,8 @@
 }
 
 .form input.notValid {
-	border: 2px solid red;
+	border: 2px solid var(--prime-red);
 }
 .form .errorText {
-	color: red;
+	color: var(--prime-red);
 }
