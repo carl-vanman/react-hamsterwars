@@ -27,7 +27,7 @@ function App() {
 				console.log('Connected to server')
 				cancelRef.current = null
 			}else if(status === 500 ){
-				throw new Error('Ups! Not able to connect with server atm. Please try to refresh the page in a moment.')
+				throw new Error('Oops! Not able to connect with server atm. Please try to refresh the page in a moment.')
 			}
 		} catch (error) {
 			setErrorMessage(error.message)

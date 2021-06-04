@@ -15,6 +15,9 @@ const Gallery = () => {
 	const [rightView, setRightView] = useState('gallery')
 
 	const swapInfo = () => {
+		if(rightView === 'form'){
+			setReload(true)
+		}
 		rightView === 'gallery' ? setRightView('form'): setRightView('gallery')
 		
 		data.topTitleWord === 'Create'? setData(galleryInfo): setData(createInfo)

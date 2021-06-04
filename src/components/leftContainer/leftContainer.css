@@ -23,8 +23,9 @@
 }
 
 .left-container p {
+	margin-top: 0.8em;
 	width: clamp(20ch, 80%, 75ch);
-	line-height: 1.3em;
+	line-height: 1.4em;
 }
 
 .left-container .btn-container {

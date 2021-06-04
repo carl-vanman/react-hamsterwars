@@ -91,8 +91,9 @@ const HamsterForm = () => {
 	const [validAge, setValidAge] = useState(true)
 
 	const validator = ({ target: {name, value} }: Validation ) => {
-		let numbers = /[1-9 + , . - * @ $ % & # " ' ! ? = ( ) ]/g
+		let numbers = /[1-9|+|,|.|-|*|@|$|%|&|#|"|'|!|?|=|(|)]/g
 		
+		//if age turns into empty string
 		if(!newHamsterObj.age){
 			setErrorMessage({
 				...errorMessage,
@@ -152,13 +153,12 @@ const HamsterForm = () => {
 		}
 	};
 
-
 	if(responseData){
 		return (
 			<section className="form right-container" style={{textAlign:"center"}}>
 				<h1>Your hamster is added!</h1>
 				<p>Click "back to gallery" and you will find your hamster with the others</p>
-				<button onClick={() => SetResponseData(undefined)}>back</button>
+				{/* <button onClick={() => SetResponseData(undefined)}>back</button> */}
 			</section>
 		)
 	} else {
@@ -188,7 +188,7 @@ const HamsterForm = () => {
 						onChange={updateNewHamster}/>
 					{errorMessage.age && <p className="errorText">{errorMessage.age}</p>}
 					</label>
-					<label>
+					<label title="My favorite food is...">
 						Fav food
 						<input
 						type="text"
@@ -196,7 +196,7 @@ const HamsterForm = () => {
 						value={newHamsterObj.favFood}
 						onChange={updateNewHamster}/>
 					</label>
-					<label>
+					<label title="On my spare time I love to...">
 						Loves
 						<input
 						type="text"
@@ -208,7 +208,7 @@ const HamsterForm = () => {
 				<div>
 					<img src={newHamsterObj.imgName} alt="hamster-img" width="200" height="auto"/>
 				</div>
-				<label>
+				<label title="https://URL OR /img/hamster-1to40.jpg">
 					Image-url
 					<input
 					type="text"

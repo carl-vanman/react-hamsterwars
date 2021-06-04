@@ -21,13 +21,14 @@ const HamsterGallery = ({dataDb, fetchHandler}: Props) => {
 		<section className="right-container">
 			{
 				dataDb ? dataDb.map((hamster: Hamster ) => {
-					let URL_IMG:string
+					let URL_IMG:string = `/img/${hamster.imgName}`
 
 					if( hamster.imgName.includes('http') ) {
 						URL_IMG = hamster.imgName
-					} else {
-						URL_IMG = `/img/${hamster.imgName}`
+					} else if(hamster.imgName.includes('/img/')){
+						URL_IMG = hamster.imgName
 					}
+					
 					return (
 						<div key={hamster.id}>
 							<Card hamsterData={hamster} URL_IMG={URL_IMG} />
