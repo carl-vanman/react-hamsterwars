@@ -76,7 +76,11 @@ const BattleFeild = () => {
 		} catch (error) {
 			console.log(error)
 		}
-	} 
+	}
+
+	const callReload = () => {
+		getRandomHamster()
+	}
 
 	const getRandomHamster = async() => {
 
@@ -100,9 +104,14 @@ const BattleFeild = () => {
 					return await response.json()
 				} 
 			}))
-			setResponseData(data)
-			setStatus('loaded')
-			cancelRef.current = null
+			if(data[0].id === data[1].id){
+				cancelRef.current = null
+				callReload()
+			}else{
+				cancelRef.current = null
+				setResponseData(data)
+				setStatus('loaded')
+			}
 		} catch (error) {
 			console.log(error)
 		}
@@ -134,13 +143,13 @@ const BattleFeild = () => {
 				const URL_IMG = `/img/${hamster.imgName}`
 				return (
 					<div key={hamster.id}>
-						<button style={{
+						{!show && <button style={{
 							width:"100%",
 							border: "3px solid var(--prime-blue)",
 							backgroundColor: "white",
 						}}
 						onClick={() => postMatch(hamster.id)}
-						>Cutest</button>
+						>Cutest</button>}
 						<Card hamsterData={hamster} URL_IMG={URL_IMG}  />
 						{show && 
 							<div>
